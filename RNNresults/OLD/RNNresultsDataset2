@@ -1,0 +1,45 @@
+RNN:: Loss Function:binary_crossentropy,   Optimizer:adagrad,   Batch Size:1,   Dropout Rate:No
+Loss Function: binary_crossentropy   Epoch: 0   Prec: 0.995253584705   Rec: 0.9995   F: 0.997372272485
+Loss Function: binary_crossentropy   Epoch: 1   Prec: 0.995452181514   Rec: 0.999577777778   F: 0.99751071391
+Loss Function: binary_crossentropy   Epoch: 2   Prec: 0.9956066089   Rec: 0.999622222222   F: 0.997610374633
+Loss Function: binary_crossentropy   Epoch: 3   Prec: 0.995760976636   Rec: 0.999644444444   F: 0.997698931528
+Loss Function: binary_crossentropy   Epoch: 4   Prec: 0.995838175881   Rec: 0.999655555556   F: 0.997743214395
+Loss Function: binary_crossentropy   Epoch: 5   Prec: 0.995926454798   Rec: 0.999677777778   F: 0.997798590432
+Loss Function: binary_crossentropy   Epoch: 6   Prec: 0.99594877301   Rec: 0.999744444444   F: 0.997842999174
+Loss Function: binary_crossentropy   Epoch: 7   Prec: 0.99601487779   Rec: 0.999733333333   F: 0.997870641469
+Loss Function: binary_crossentropy   Epoch: 8   Prec: 0.9960700962   Rec: 0.999755555556   F: 0.997909423123
+Loss Function: binary_crossentropy   Epoch: 9   Prec: 0.99611420474   Rec: 0.999755555556   F: 0.997931558429
+Loss Function: binary_crossentropy   Epoch: 10   Prec: 0.996136388797   Rec: 0.999788888889   F: 0.997959296845
+Loss Function: binary_crossentropy   Epoch: 11   Prec: 0.996191530584   Rec: 0.999788888889   F: 0.997986967974
+Loss Function: binary_crossentropy   Epoch: 12   Prec: 0.99623564841   Rec: 0.999788888889   F: 0.998009105983
+Loss Function: binary_crossentropy   Epoch: 13   Prec: 0.996323936488   Rec: 0.9998   F: 0.998058941624
+Loss Function: binary_crossentropy   Epoch: 14   Prec: 0.996357073257   Rec: 0.999811111111   F: 0.998081103864
+Loss Function: binary_crossentropy   Epoch: 15   Prec: 0.996379058334   Rec: 0.999788888889   F: 0.998081061295
+Loss Function: binary_crossentropy   Epoch: 16   Prec: 0.996434226991   Rec: 0.999788888889   F: 0.998108739178
+Loss Function: binary_crossentropy   Epoch: 17   Prec: 0.996467331118   Rec: 0.999788888889   F: 0.998125346644
+Loss Function: binary_crossentropy   Epoch: 18   Prec: 0.996478288315   Rec: 0.999766666667   F: 0.998119769048
+Loss Function: binary_crossentropy   Epoch: 19   Prec: 0.996522432525   Rec: 0.999766666667   F: 0.998141913441
+Loss Function: binary_crossentropy   Epoch: 20   Prec: 0.99655554325   Rec: 0.999766666667   F: 0.998158522381
+RNN:: Loss Function:mse,   Optimizer:adagrad,   Batch Size:1,   Dropout Rate:No
+Loss Function: mse   Epoch: 0   Prec: 0.996677004874   Rec: 0.999777777778   F: 0.998224983359
+Loss Function: mse   Epoch: 1   Prec: 0.996732098547   Rec: 0.999744444444   F: 0.998235998935
+Loss Function: mse   Epoch: 2   Prec: 0.996765188107   Rec: 0.999733333333   F: 0.998247054386
+Loss Function: mse   Epoch: 3   Prec: 0.996798245128   Rec: 0.999711111111   F: 0.998252553214
+Loss Function: mse   Epoch: 4   Prec: 0.996809182464   Rec: 0.999677777778   F: 0.998241419291
+Loss Function: mse   Epoch: 5   Prec: 0.996809111759   Rec: 0.999655555556   F: 0.99823030451
+Loss Function: mse   Epoch: 6   Prec: 0.996819979834   Rec: 0.9996   F: 0.998208054324
+Loss Function: mse   Epoch: 7   Prec: 0.996842000288   Rec: 0.999577777778   F: 0.998208014558
+Loss Function: mse   Epoch: 8   Prec: 0.996864057444   Rec: 0.999566666667   F: 0.998213532767
+Loss Function: mse   Epoch: 9   Prec: 0.996886047053   Rec: 0.999533333333   F: 0.99820793502
+Loss Function: mse   Epoch: 10   Prec: 0.99689699119   Rec: 0.9995   F: 0.998196798624
+Loss Function: mse   Epoch: 11   Prec: 0.996885909015   Rec: 0.999488888889   F: 0.998185702
+Loss Function: mse   Epoch: 12   Prec: 0.996918916523   Rec: 0.999444444444   F: 0.998180083006
+Loss Function: mse   Epoch: 13   Prec: 0.996940777442   Rec: 0.999366666667   F: 0.998152248098
+Loss Function: mse   Epoch: 14   Prec: 0.9969406418   Rec: 0.999322222222   F: 0.998130011375
+Loss Function: mse   Epoch: 15   Prec: 0.996940540061   Rec: 0.999288888889   F: 0.998113333185
+Loss Function: mse   Epoch: 16   Prec: 0.996929318907   Rec: 0.999233333333   F: 0.998079996449
+Loss Function: mse   Epoch: 17   Prec: 0.996940336563   Rec: 0.999222222222   F: 0.99807997514
+Loss Function: mse   Epoch: 18   Prec: 0.996929216784   Rec: 0.9992   F: 0.998063316778
+Loss Function: mse   Epoch: 19   Prec: 0.996918062592   Rec: 0.999166666667   F: 0.998041098095
+Loss Function: mse   Epoch: 20   Prec: 0.996929046563   Rec: 0.999144444444   F: 0.998035516093
+

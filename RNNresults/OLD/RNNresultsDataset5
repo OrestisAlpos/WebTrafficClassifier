@@ -1,0 +1,45 @@
+RNN Dataset 5   Loss Function:categorical_crossentropy,   Optimizer:sgd,   Batch Size:1,   Dropout Rate:No
+Loss Function: categorical_crossentropy   Epoch: 0   Prec: 0.954327956989
+Loss Function: categorical_crossentropy   Epoch: 1   Prec: 0.951948924731
+Loss Function: categorical_crossentropy   Epoch: 2   Prec: 0.94686827957
+Loss Function: categorical_crossentropy   Epoch: 3   Prec: 0.962668010753
+Loss Function: categorical_crossentropy   Epoch: 4   Prec: 0.894670698925
+Loss Function: categorical_crossentropy   Epoch: 5   Prec: 0.945329301075
+Loss Function: categorical_crossentropy   Epoch: 6   Prec: 0.872909946237
+Loss Function: categorical_crossentropy   Epoch: 7   Prec: 0.919220430108
+Loss Function: categorical_crossentropy   Epoch: 8   Prec: 0.913313172043
+Loss Function: categorical_crossentropy   Epoch: 9   Prec: 0.871142473118
+Loss Function: categorical_crossentropy   Epoch: 10   Prec: 0.905241935484
+Loss Function: categorical_crossentropy   Epoch: 11   Prec: 0.96063844086
+Loss Function: categorical_crossentropy   Epoch: 12   Prec: 0.932043010753
+Loss Function: categorical_crossentropy   Epoch: 13   Prec: 0.915887096774
+Loss Function: categorical_crossentropy   Epoch: 14   Prec: 0.911041666667
+Loss Function: categorical_crossentropy   Epoch: 15   Prec: 0.883877688172
+Loss Function: categorical_crossentropy   Epoch: 16   Prec: 0.910766129032
+Loss Function: categorical_crossentropy   Epoch: 17   Prec: 0.90061155914
+Loss Function: categorical_crossentropy   Epoch: 18   Prec: 0.931424731183
+Loss Function: categorical_crossentropy   Epoch: 19   Prec: 0.957392473118
+Loss Function: categorical_crossentropy   Epoch: 20   Prec: 0.820053763441
+RNN Dataset 5   Loss Function:mse,   Optimizer:sgd,   Batch Size:1,   Dropout Rate:No
+Loss Function: mse   Epoch: 0   Prec: 0.965194892473
+Loss Function: mse   Epoch: 1   Prec: 0.965712365591
+Loss Function: mse   Epoch: 2   Prec: 0.957889784946
+Loss Function: mse   Epoch: 3   Prec: 0.944932795699
+Loss Function: mse   Epoch: 4   Prec: 0.936532258065
+Loss Function: mse   Epoch: 5   Prec: 0.923501344086
+Loss Function: mse   Epoch: 6   Prec: 0.921955645161
+Loss Function: mse   Epoch: 7   Prec: 0.925181451613
+Loss Function: mse   Epoch: 8   Prec: 0.930739247312
+Loss Function: mse   Epoch: 9   Prec: 0.93624327957
+Loss Function: mse   Epoch: 10   Prec: 0.917318548387
+Loss Function: mse   Epoch: 11   Prec: 0.930080645161
+Loss Function: mse   Epoch: 12   Prec: 0.94377016129
+Loss Function: mse   Epoch: 13   Prec: 0.947607526882
+Loss Function: mse   Epoch: 14   Prec: 0.947130376344
+Loss Function: mse   Epoch: 15   Prec: 0.948965053763
+Loss Function: mse   Epoch: 16   Prec: 0.949106182796
+Loss Function: mse   Epoch: 17   Prec: 0.948427419355
+Loss Function: mse   Epoch: 18   Prec: 0.957634408602
+Loss Function: mse   Epoch: 19   Prec: 0.949415322581
+Loss Function: mse   Epoch: 20   Prec: 0.963420698925
+

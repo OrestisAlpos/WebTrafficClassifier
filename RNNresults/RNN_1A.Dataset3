@@ -1,0 +1,144 @@
+Model:RNN_1A Dataset:Dataset3 Loss:mae Optimizer:sgd Dropout:No
+Epoch|Loss|Accuracy|Precision|Recall|Fscore
+1|0.50058988592|0.496|0.0|0.0|nan
+2|0.506296645385|0.5|0.0|0.0|nan
+3|0.507883972828|0.497|0.0|0.0|nan
+4|0.50877714545|0.496|0.0|0.0|nan
+5|0.507811402978|0.496|0.0|0.0|nan
+6|0.506921213188|0.496|0.0|0.0|nan
+Model:RNN_1A Dataset:Dataset3 Loss:mae Optimizer:adagrad Dropout:No
+Epoch|Loss|Accuracy|Precision|Recall|Fscore
+1|0.511891267207|0.497|0.2|0.002|0.0039603960396
+2|0.510136637388|0.496|0.0|0.0|nan
+3|0.508480044661|0.496|0.0|0.0|nan
+4|0.507393837287|0.496|0.0|0.0|nan
+5|0.506766362811|0.496|0.0|0.0|nan
+6|0.506367664599|0.496|0.0|0.0|nan
+Model:RNN_1A Dataset:Dataset3 Loss:mae Optimizer:rmsprop Dropout:No
+Epoch|Loss|Accuracy|Precision|Recall|Fscore
+1|0.524798675289|0.495|0.142857142857|0.002|0.00394477317554
+2|0.506134653951|0.496|0.0|0.0|nan
+3|0.503994754391|0.496|0.0|0.0|nan
+4|0.503904881829|0.496|0.0|0.0|nan
+5|0.503991544856|0.496|0.0|0.0|nan
+6|0.503993995277|0.496|0.0|0.0|nan
+Model:RNN_1A Dataset:Dataset3 Loss:mse Optimizer:sgd Dropout:No
+Epoch|Loss|Accuracy|Precision|Recall|Fscore
+1|0.252988466322|0.494|0.0|0.0|nan
+2|0.327640216038|0.496|0.0|0.0|nan
+3|0.430162218974|0.497|0.0|0.0|nan
+4|0.446708267141|0.496|0.0|0.0|nan
+5|0.457335546589|0.496|0.0|0.0|nan
+6|0.464767147289|0.496|0.0|0.0|nan
+Model:RNN_1A Dataset:Dataset3 Loss:mse Optimizer:adagrad Dropout:No
+Epoch|Loss|Accuracy|Precision|Recall|Fscore
+1|0.426876651131|0.496|0.0|0.0|nan
+2|0.448305015794|0.496|0.0|0.0|nan
+3|0.458941169391|0.496|0.0|0.0|nan
+4|0.465335760254|0.496|0.0|0.0|nan
+5|0.469822874723|0.496|0.0|0.0|nan
+6|0.473269270881|0.496|0.0|0.0|nan
+Model:RNN_1A Dataset:Dataset3 Loss:mse Optimizer:rmsprop Dropout:No
+Epoch|Loss|Accuracy|Precision|Recall|Fscore
+1|0.437171928487|0.496|0.0|0.0|nan
+2|0.493084128891|0.496|0.0|0.0|nan
+3|0.503487639617|0.496|0.0|0.0|nan
+4|0.503961811118|0.496|0.0|0.0|nan
+5|0.503988810218|0.496|0.0|0.0|nan
+6|0.503993721116|0.496|0.0|0.0|nan
+Model:RNN_1A Dataset:Dataset3 Loss:binary_crossentropy Optimizer:sgd Dropout:No
+Epoch|Loss|Accuracy|Precision|Recall|Fscore
+1|0.91130969353|0.497|0.0|0.0|nan
+2|2.05890350603|0.496|0.0|0.0|nan
+3|2.50962440998|0.496|0.0|0.0|nan
+4|2.78466197127|0.496|0.0|0.0|nan
+5|2.98073099104|0.496|0.0|0.0|nan
+6|3.13360058365|0.496|0.0|0.0|nan
+Model:RNN_1A Dataset:Dataset3 Loss:binary_crossentropy Optimizer:adagrad Dropout:No
+Epoch|Loss|Accuracy|Precision|Recall|Fscore
+1|1.49960088596|0.497|0.0|0.0|nan
+2|1.78975889865|0.496|0.0|0.0|nan
+3|2.00904154341|0.496|0.0|0.0|nan
+4|2.17954974784|0.496|0.0|0.0|nan
+5|2.31897503253|0.496|0.0|0.0|nan
+6|2.43618526993|0.496|0.0|0.0|nan
+Model:RNN_1A Dataset:Dataset3 Loss:binary_crossentropy Optimizer:rmsprop Dropout:No
+Epoch|Loss|Accuracy|Precision|Recall|Fscore
+1|1.78171199336|0.496|0.0|0.0|nan
+2|2.67403193355|0.496|0.0|0.0|nan
+3|3.77649274116|0.496|0.0|0.0|nan
+4|4.94209835504|0.496|0.0|0.0|nan
+5|6.31001176306|0.496|0.0|0.0|nan
+6|7.97950822274|0.496|0.0|0.0|nan
+Model:RNN_1A Dataset:Dataset3 Loss:mae Optimizer:sgd Dropout:No
+Epoch|Loss|Accuracy|Precision|Recall|Fscore
+1|0.502568225354|0.496|0.0|0.0|nan
+2|0.516364194408|0.497|0.0|0.0|nan
+3|0.509399729004|0.497|0.0|0.0|nan
+4|0.510707621181|0.496|0.0|0.0|nan
+5|0.509130648957|0.496|0.0|0.0|nan
+6|0.507772420687|0.496|0.0|0.0|nan
+Model:RNN_1A Dataset:Dataset3 Loss:mae Optimizer:adagrad Dropout:No
+Epoch|Loss|Accuracy|Precision|Recall|Fscore
+1|0.509593511598|0.497|0.2|0.002|0.0039603960396
+2|0.508120514919|0.496|0.0|0.0|nan
+3|0.506712274955|0.496|0.0|0.0|nan
+4|0.506039836832|0.496|0.0|0.0|nan
+5|0.505687242136|0.496|0.0|0.0|nan
+6|0.505463882799|0.496|0.0|0.0|nan
+Model:RNN_1A Dataset:Dataset3 Loss:mae Optimizer:rmsprop Dropout:No
+Epoch|Loss|Accuracy|Precision|Recall|Fscore
+1|0.513528084744|0.498|0.25|0.002|0.00396825396825
+2|0.506483567777|0.496|0.0|0.0|nan
+3|0.504078777613|0.496|0.0|0.0|nan
+4|0.504081894586|0.496|0.0|0.0|nan
+5|0.504110220562|0.496|0.0|0.0|nan
+6|0.503832180075|0.496|0.0|0.0|nan
+Model:RNN_1A Dataset:Dataset3 Loss:mse Optimizer:sgd Dropout:No
+Epoch|Loss|Accuracy|Precision|Recall|Fscore
+1|0.25214862062|0.495|0.0|0.0|nan
+2|0.321927395403|0.496|0.0|0.0|nan
+3|0.433312433363|0.496|0.0|0.0|nan
+4|0.449823088134|0.496|0.0|0.0|nan
+5|0.45998760487|0.496|0.0|0.0|nan
+6|0.466925783104|0.496|0.0|0.0|nan
+Model:RNN_1A Dataset:Dataset3 Loss:mse Optimizer:adagrad Dropout:No
+Epoch|Loss|Accuracy|Precision|Recall|Fscore
+1|0.41995672678|0.496|0.0|0.0|nan
+2|0.444305191117|0.496|0.0|0.0|nan
+3|0.45823361318|0.496|0.0|0.0|nan
+4|0.465532778376|0.496|0.0|0.0|nan
+5|0.470618498602|0.496|0.0|0.0|nan
+6|0.474316717547|0.496|0.0|0.0|nan
+Model:RNN_1A Dataset:Dataset3 Loss:mse Optimizer:rmsprop Dropout:No
+Epoch|Loss|Accuracy|Precision|Recall|Fscore
+1|0.436451639882|0.496|0.166666666667|0.002|0.00395256916996
+2|0.49257252978|0.496|0.0|0.0|nan
+3|0.50245488952|0.496|0.0|0.0|nan
+4|0.50385876287|0.496|0.0|0.0|nan
+5|0.503982321926|0.496|0.0|0.0|nan
+6|0.503992079763|0.496|0.0|0.0|nan
+Model:RNN_1A Dataset:Dataset3 Loss:binary_crossentropy Optimizer:sgd Dropout:No
+Epoch|Loss|Accuracy|Precision|Recall|Fscore
+1|1.13359761184|0.497|0.0|0.0|nan
+2|2.09667728216|0.496|0.0|0.0|nan
+3|2.51316003093|0.496|0.0|0.0|nan
+4|2.77732622407|0.496|0.0|0.0|nan
+5|2.96941075154|0.496|0.0|0.0|nan
+6|3.12112934733|0.496|0.0|0.0|nan
+Model:RNN_1A Dataset:Dataset3 Loss:binary_crossentropy Optimizer:adagrad Dropout:No
+Epoch|Loss|Accuracy|Precision|Recall|Fscore
+1|1.51456285877|0.497|0.0|0.0|nan
+2|1.70115559801|0.496|0.0|0.0|nan
+3|1.83094964803|0.496|0.0|0.0|nan
+4|1.92533153342|0.496|0.0|0.0|nan
+5|1.99827050622|0.496|0.0|0.0|nan
+6|2.05808229163|0.496|0.0|0.0|nan
+Model:RNN_1A Dataset:Dataset3 Loss:binary_crossentropy Optimizer:rmsprop Dropout:No
+Epoch|Loss|Accuracy|Precision|Recall|Fscore
+1|1.54991590521|0.496|0.166666666667|0.002|0.00395256916996
+2|2.59727657265|0.496|0.0|0.0|nan
+3|3.86133283938|0.496|0.0|0.0|nan
+4|5.25267163571|0.496|0.0|0.0|nan
+5|7.16203945793|0.496|0.0|0.0|nan
+6|8.11581754447|0.496|0.0|0.0|nan

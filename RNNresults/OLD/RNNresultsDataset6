@@ -1,0 +1,5 @@
+Dataset6 RNN:: Loss Function: mse,  Optimizer: adagrad,  Batch Size:1,  Dropout Rate:No
+Loss Function: mse   Epoch:    Prec: 0.988579921967   Rec: 0.995633895937   F: 0.992094370346
+Loss Function: mse   Epoch: 1   Prec: 0.988579921967   Rec: 0.995633895937   F: 0.992094370346
+Loss Function: mse   Epoch: 2   Prec: 0.989636663402   Rec: 0.995883387598   F: 0.992750198965
+Loss Function: mse   Epoch: 2   Prec: 0.987699513157   Rec: 0.999675660841   F: 0.993651502188
