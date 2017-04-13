@@ -286,3 +286,116 @@ Epoch|Loss|Accuracy|Precision|Recall|Fscore
 8|nan|1.0|0|0|0
 9|nan|1.0|0|0|0
 10|nan|1.0|0|0|0
+Model:RNN_1B Dataset:Dataset5 Loss:mae Optimizer:sgd Dropout:No
+Epoch|Loss|Accuracy|Precision|Recall|Fscore
+1|0.105827036105|1.0|0|0|0
+2|0.00628308028448|1.0|0|0|0
+3|0.00214775050813|1.0|0|0|0
+Model:RNN_1B Dataset:Dataset5 Loss:mae Optimizer:sgd Dropout:No
+Epoch|Loss|Accuracy|Precision|Recall|Fscore
+1|0.0830736070164|1.0|0|0|0
+2|0.005381967491|1.0|0|0|0
+3|0.00248970868177|1.0|0|0|0
+4|0.00232555467566|1.0|0|0|0
+5|0.00395533619839|1.0|0|0|0
+6|0.00481295977923|1.0|0|0|0
+7|0.00331216610496|1.0|0|0|0
+8|0.00290465095592|1.0|0|0|0
+9|0.00216038110923|1.0|0|0|0
+10|0.00062107586683|1.0|0|0|0
+Model:RNN_1B Dataset:Dataset5 Loss:mae Optimizer:adagrad Dropout:No
+Epoch|Loss|Accuracy|Precision|Recall|Fscore
+1|nan|1.0|0|0|0
+2|nan|1.0|0|0|0
+3|nan|1.0|0|0|0
+4|nan|1.0|0|0|0
+5|nan|1.0|0|0|0
+6|nan|1.0|0|0|0
+7|nan|1.0|0|0|0
+8|nan|1.0|0|0|0
+9|nan|1.0|0|0|0
+10|nan|1.0|0|0|0
+Model:RNN_1B Dataset:Dataset5 Loss:mae Optimizer:rmsprop Dropout:No
+Epoch|Loss|Accuracy|Precision|Recall|Fscore
+1|0.000965370614029|1.0|0|0|0
+2|nan|1.0|0|0|0
+3|nan|1.0|0|0|0
+4|nan|1.0|0|0|0
+5|nan|1.0|0|0|0
+6|nan|1.0|0|0|0
+7|nan|1.0|0|0|0
+8|nan|1.0|0|0|0
+9|nan|1.0|0|0|0
+10|nan|1.0|0|0|0
+Model:RNN_1B Dataset:Dataset5 Loss:mse Optimizer:sgd Dropout:No
+Epoch|Loss|Accuracy|Precision|Recall|Fscore
+1|0.0783026325777|1.0|0|0|0
+2|0.0318754488705|1.0|0|0|0
+3|0.0134065232346|1.0|0|0|0
+4|0.00807175439403|1.0|0|0|0
+5|0.00568059599505|1.0|0|0|0
+6|0.00469768777719|1.0|0|0|0
+7|0.00462760119671|1.0|0|0|0
+8|0.00520162056924|0.998|0|0|0
+9|0.0063396477446|0.998|0|0|0
+10|0.00768576446914|0.996|0|0|0
+Model:RNN_1B Dataset:Dataset5 Loss:mse Optimizer:adagrad Dropout:No
+Epoch|Loss|Accuracy|Precision|Recall|Fscore
+1|nan|1.0|0|0|0
+2|nan|1.0|0|0|0
+3|nan|1.0|0|0|0
+4|nan|1.0|0|0|0
+5|nan|1.0|0|0|0
+6|nan|1.0|0|0|0
+7|nan|1.0|0|0|0
+8|nan|1.0|0|0|0
+9|nan|1.0|0|0|0
+10|nan|1.0|0|0|0
+Model:RNN_1B Dataset:Dataset5 Loss:mse Optimizer:rmsprop Dropout:No
+Epoch|Loss|Accuracy|Precision|Recall|Fscore
+1|0.000365111000932|1.0|0|0|0
+2|nan|1.0|0|0|0
+3|nan|1.0|0|0|0
+4|nan|1.0|0|0|0
+5|nan|1.0|0|0|0
+6|nan|1.0|0|0|0
+7|nan|1.0|0|0|0
+8|nan|1.0|0|0|0
+9|nan|1.0|0|0|0
+10|nan|1.0|0|0|0
+Model:RNN_1B Dataset:Dataset5 Loss:categorical_crossentropy Optimizer:sgd Dropout:No
+Epoch|Loss|Accuracy|Precision|Recall|Fscore
+1|0.0741294674056|1.0|0|0|0
+2|0.0554310659029|0.996|0|0|0
+3|0.0473081712256|0.992|0|0|0
+4|0.0433158082678|0.991|0|0|0
+5|0.0456633309611|0.988|0|0|0
+6|0.0527807885949|0.987|0|0|0
+7|0.0589842486386|0.983|0|0|0
+8|0.0618967413316|0.982|0|0|0
+9|0.0618354014059|0.982|0|0|0
+10|0.059996911562|0.985|0|0|0
+Model:RNN_1B Dataset:Dataset5 Loss:categorical_crossentropy Optimizer:adagrad Dropout:No
+Epoch|Loss|Accuracy|Precision|Recall|Fscore
+1|nan|1.0|0|0|0
+2|nan|1.0|0|0|0
+3|nan|1.0|0|0|0
+4|nan|1.0|0|0|0
+5|nan|1.0|0|0|0
+6|nan|1.0|0|0|0
+7|nan|1.0|0|0|0
+8|nan|1.0|0|0|0
+9|nan|1.0|0|0|0
+10|nan|1.0|0|0|0
+Model:RNN_1B Dataset:Dataset5 Loss:categorical_crossentropy Optimizer:rmsprop Dropout:No
+Epoch|Loss|Accuracy|Precision|Recall|Fscore
+1|0.00214927719762|1.0|0|0|0
+2|nan|1.0|0|0|0
+3|nan|1.0|0|0|0
+4|nan|1.0|0|0|0
+5|nan|1.0|0|0|0
+6|nan|1.0|0|0|0
+7|nan|1.0|0|0|0
+8|nan|1.0|0|0|0
+9|nan|1.0|0|0|0
+10|nan|1.0|0|0|0

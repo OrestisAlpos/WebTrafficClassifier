@@ -3,7 +3,7 @@ from keras.models import model_from_json, Sequential
 from keras.layers import Activation, Dense, Dropout
 from keras.engine import Input, Model
 import keras.utils
-from keras.utils.visualize_util import plot
+from keras.utils.vis_utils import plot_model
 import numpy as np
 import datetime
 import random
@@ -28,7 +28,7 @@ def get_model(num_hid_layers, cells_per_layer, dropout_rate):
 	model.add(Dense(3, activation='softmax'))
 
 	model_name = models_directory + 'MLP.hidlay' + str(num_hid_layers) + '.cells' + str(cells_per_layer) + '.drop' + str(dropout_rate)
-	plot(model, to_file = model_name + '.png')
+	plot_model(model, to_file = model_name + '.png', show_shapes=True)
 
 	fp_model = open(model_name + '.json', 'w+')
 	fp_model.write(model.to_json())
@@ -61,7 +61,7 @@ def fit_and_eval(loss_function, optimizer, dropout_rate, dataset_name):
 		for cells_per_layer in [20,30,40,50,60]:
 			model = get_model(num_hid_layers, cells_per_layer, dropout_rate)
 			model.compile(optimizer=optimizer, loss=loss_function, metrics=['accuracy'])
-			model.fit(x_train, keras.utils.np_utils.to_categorical(y_train, num_classes), nb_epoch = nb_epoch, batch_size = 128, shuffle=True)
+			model.fit(x_train, keras.utils.np_utils.to_categorical(y_train, num_classes), epochs = nb_epoch, batch_size = 128, shuffle=True)
 			ev = model.evaluate(x = x_test, y = keras.utils.np_utils.to_categorical(y_test, num_classes), batch_size = 128)
 			results.append(ev[1])
 			#results.append(0.1*num_hid_layers + 0.001*cells_per_layer)		

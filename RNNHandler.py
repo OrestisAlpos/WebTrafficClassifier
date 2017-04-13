@@ -1,7 +1,7 @@
 import keras.utils
 from keras.models import Sequential, model_from_json, load_model
 from keras.layers import Dense, Activation, SimpleRNN
-from keras.utils.visualize_util import plot
+from keras.utils.vis_utils import plot_model
 import keras.utils.np_utils
 from keras.utils.np_utils import to_categorical
 
@@ -70,7 +70,7 @@ class RNNHandler:
 			y_train = to_categorical(y_train, self.num_categories)
 			y_test = to_categorical(y_test, self.num_categories)
 		for i in range(1, nb_epoch+1):			
-			self.model.fit(x_train, y_train, batch_size=1, nb_epoch=1, shuffle=False)
+			self.model.fit(x_train, y_train, batch_size=1, epochs=1, shuffle=False)
 			self.model.reset_states()
 			(loss, accuracy) = self.model.evaluate(x_test, y_test, batch_size=1)
 			self.model.reset_states()

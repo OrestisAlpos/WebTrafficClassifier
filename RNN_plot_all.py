@@ -1,7 +1,7 @@
 import keras.utils
 from keras.models import Sequential, model_from_json, load_model
 from keras.layers import Dense, Activation, SimpleRNN
-from keras.utils.visualize_util import plot
+from keras.utils.vis_utils import plot_model
 import keras.utils.np_utils
 from keras.utils.np_utils import to_categorical
 
