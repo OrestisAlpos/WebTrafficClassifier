@@ -1,0 +1,72 @@
+2017-01-08 13:22:01.016088: SCRIPT STARTED
+2017-01-08 13:22:01.016178: Started formatting the input arrays
+2017-01-08 13:24:01.208664: Finished formating the input arrays.
+	Sizes are: x_train=(454, 1000, 206) y_train=(454,) x_test=(151, 1000, 206) y_test=(151,)
+2017-01-08 13:24:01.208747: Starting building the model
+2017-01-08 13:28:47.338342: Evaluating the model
+2017-01-08 13:30:29.723445: SCRIPT STARTED
+2017-01-08 13:30:29.723538: Started formatting the input arrays
+2017-01-08 13:32:19.589402: Finished formating the input arrays.
+	Sizes are: x_train=(454, 1000, 206) y_train=(454,) x_test=(151, 1000, 206) y_test=(151,)
+2017-01-08 13:32:19.589494: Starting building the model
+2017-01-08 13:37:12.458185: Evaluating the model
+	[0.0025343976217932652, 1.0]
+2017-01-10 16:49:34.961261------------------------------------------
+: SCRIPT STARTED
+2017-01-10 16:49:34.979711: Started formatting the input arrays
+2017-03-11 20:15:13.025260------------------------------------------
+: SCRIPT STARTED
+2017-03-11 20:15:13.025317: Started formatting the input arrays.
+2017-03-11 20:15:43.979329------------------------------------------
+: SCRIPT STARTED
+2017-03-11 20:15:43.979411: Started formatting the input arrays.
+2017-03-11 20:21:56.971854------------------------------------------
+: SCRIPT STARTED
+2017-03-11 20:21:56.971904: Started formatting the input arrays.
+2017-03-11 20:36:07.928962------------------------------------------
+: SCRIPT STARTED
+2017-03-11 20:36:07.929020: Started formatting the input arrays.
+2017-03-11 20:39:10.624161------------------------------------------
+: SCRIPT STARTED
+2017-03-11 20:39:10.624218: Started formatting the input arrays.
+2017-03-15 08:11:10.087715------------------------------------------
+: SCRIPT STARTED
+2017-03-15 08:11:10.087772: Started formatting the input arrays.
+2017-03-15 08:11:37.531228: Starting building the model
+2017-03-15 08:37:29.563509: Evaluating the model
+	MLP: [0.04614617031090891, 0.99194180886066263]
+2017-03-15 09:46:53.916606------------------------------SCRIPT STARTED
+Started formatting the input arrays.
+2017-03-15 09:47:23.167216: Started training with 627312 train samples.
+2017-03-15 10:52:10.282655: Evaluating the model
+     RNN_1: [0.017549148938012626, 0.99334302548014386]
+2017-03-19 18:50:32.407555------------------------------SCRIPT STARTED
+Started formatting the input arrays.
+2017-03-19 18:55:50.273510------------------------------SCRIPT STARTED
+Started formatting the input arrays.
+2017-03-19 18:56:22.022616: Started training with 342246 train samples.
+2017-03-19 18:56:58.273095------------------------------SCRIPT STARTED
+Started formatting the input arrays.
+2017-03-19 18:57:29.439415: Started training with 342246 train samples.
+2017-03-19 19:07:20.691066------------------------------SCRIPT STARTED
+Started formatting the input arrays.
+2017-03-19 19:07:51.773365: Started training with 342246 train samples.
+2017-03-19 19:09:44.505725------------------------------SCRIPT STARTED
+Started formatting the input arrays.
+2017-03-19 19:10:15.513770: Started training with 342246 train samples.
+2017-03-19 19:29:20.264202------------------------------SCRIPT STARTED
+Started formatting the input arrays.
+2017-03-19 19:29:51.269093: Started training with 342246 train samples.
+2017-03-19 20:27:02.143164------------------------------SCRIPT STARTED
+Started formatting the input arrays.
+2017-03-19 20:27:35.712187: Started training with 342246 train samples.
+2017-03-19 20:31:20.391263------------------------------SCRIPT STARTED
+Started formatting the input arrays.
+2017-03-19 20:31:51.600253: Started training with 342246 train samples.
+2017-03-19 20:32:34.320103------------------------------SCRIPT STARTED
+Started formatting the input arrays.
+2017-03-19 20:33:05.937529: Started training with 342246 train samples.
+2017-04-03 12:25:26.016084------------------------------------------
+: SCRIPT STARTED
+2017-04-03 12:25:26.016173: Started formatting the input arrays.
+2017-04-03 12:27:38.846806: Starting building the model
