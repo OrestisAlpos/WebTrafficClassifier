@@ -25,7 +25,7 @@ def get_model(num_hid_layers, cells_per_layer, dropout_rate):
 		model.add(Dense(cells_per_layer, activation='relu'))
 		model.add(Dropout(dropout_rate))
 
-	model.add(Dense(3, activation='softmax'))
+	model.add(Dense(5, activation='softmax'))
 
 	model_name = models_directory + 'MLP.hidlay' + str(num_hid_layers) + '.cells' + str(cells_per_layer) + '.drop' + str(dropout_rate)
 	plot_model(model, to_file = model_name + '.png', show_shapes=True)
@@ -43,10 +43,10 @@ def fit_and_eval(loss_function, optimizer, dropout_rate, dataset_name):
 	
 	# READ THE INPUT
 	fp_logfile = open('./working/logfile', 'a')
-	reader = Reader(fp_logfile, False)
-	(x_train, y_train), (x_test, y_test) = reader.getDataNormalized()
+	#reader = Reader(fp_logfile, False)
+	#(x_train, y_train), (x_test, y_test) = reader.getDataNormalized()
 
-	#(x_train, y_train), (x_test, y_test) = Reader.getDataset(5)
+	(x_train, y_train), (x_test, y_test) = Reader.getDataset(5)
 	x_train = x_train[0:1000,:]
 	y_train = y_train[0:1000]
 	x_test = x_test[0:1000,:]
