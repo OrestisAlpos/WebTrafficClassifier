@@ -77,7 +77,7 @@ for loss in ['mae', 'mse', 'categorical_crossentropy']:
 		else:
 			results[loss + '|' + optimizer] = res_accuracy
 
-title = 'Dataset: ' + dataset_name + ', ' + 'Model: ' + RNN_name
+title = RNN_name + '.' + dataset_name
 metric = 'accuracy'
 if num_classes == 2:
 	metric = 'fscore'
