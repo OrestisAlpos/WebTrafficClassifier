@@ -399,3 +399,8 @@ Epoch|Loss|Accuracy|Precision|Recall|Fscore
 8|nan|1.0|0|0|0
 9|nan|1.0|0|0|0
 10|nan|1.0|0|0|0
+Model:RNN_1B Dataset:Dataset5 Loss:mae Optimizer:sgd Dropout:No
+Epoch|Loss|Accuracy|Precision|Recall|Fscore
+1|0.0762655455172|1.0|0|0|0
+2|0.00477864813374|1.0|0|0|0
+3|0.00198438162095|1.0|0|0|0
