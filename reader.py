@@ -16,7 +16,7 @@ class Reader:
 		x_test = []
 		y_test = []	
 	
-		rootDir = '/home/orestis/nProbe/dumpedited'
+		rootDir = './nProbe/dumpedited'
 	
 		lineBuff = ""
 		lineBuff_lenprv = -1
@@ -123,11 +123,11 @@ class Reader:
 		x_test = []
 		y_test = []
 
-		LegitFile = '/home/orestis/nProbe/dumpedited/edited'
-		PingAttFile = '/home/orestis/nProbe/dumpedited/editedPINGATT'
-		SYNATTFile = '/home/orestis/nProbe/dumpedited/editedSYNATT'
-		UDPATTFile = '/home/orestis/nProbe/dumpedited/editedUDPATT'
-		PortScanFile = '/home/orestis/nProbe/dumpedited/editedPORTSC'
+		LegitFile = './nProbe/dumpedited/edited'
+		PingAttFile = './nProbe/dumpedited/editedPINGATT'
+		SYNATTFile = './nProbe/dumpedited/editedSYNATT'
+		UDPATTFile = './nProbe/dumpedited/editedUDPATT'
+		PortScanFile = './nProbe/dumpedited/editedPORTSC'
 		
 
 		if DataSetType == 1 or DataSetType == 2 or DataSetType == 3:
@@ -293,7 +293,7 @@ class Reader:
 	@staticmethod
 	def getInputShape():
 		length = 0
-		rootDir='/home/orestis/nProbe/dumpedited'
+		rootDir='./nProbe/dumpedited'
 		for dirName, subdirList, fileList in os.walk(rootDir):
 			for fname in fileList:
 				file_data = open(dirName + '/' + fname, 'r')

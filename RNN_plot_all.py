@@ -60,7 +60,7 @@ RNN_name = 'RNN_1C'
 
 num_epochs = 10
 
-fp_logfile = open('/home/orestis/net/debug/logfile', "a")
+fp_logfile = open('./debug/logfile', "a")
 reader = Reader(fp_logfile, False)
 (x_train, y_train), (x_test, y_test) = reader.getDataNormalized()
 x_train = x_train[0:1000,:]

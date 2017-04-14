@@ -7,7 +7,7 @@ FILES=~/capture/adam/split/*
 for f in ${FILES}
 do
 	echo $f > ~/capture/adam/pcap_list
-	~/nProbe/start_nprobe.sh "--pcap-file-list /home/orestis/capture/adam/pcap_list" '/home/orestis/nProbe/dump/benign' ''
+	~/nProbe/start_nprobe.sh "--pcap-file-list /home/orestis/capture/adam/pcap_list" './nProbe/dump/benign' ''
 	sleep 59
 done
 
@@ -15,4 +15,4 @@ done
 
 sudo rm -f ~nProbe/dumpedited/edited
 
-sudo python3 /home/orestis/nProbe/transform_dump_files.py '/home/orestis/nProbe/dump/benign' '/home/orestis/nProbe/dumpedited/edited'
+sudo python3 ./nProbe/transform_dump_files.py './nProbe/dump/benign' './nProbe/dumpedited/edited'

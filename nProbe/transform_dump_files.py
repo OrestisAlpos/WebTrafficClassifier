@@ -2,7 +2,7 @@ import os
 import sys
 
 debug = False
-#outfile = open('/home/orestis/nProbe/dumpedited/edited','w')
+#outfile = open('./nProbe/dumpedited/edited','w')
 outfile = open(sys.argv[2], 'w')
 
 def write_tokens(tokens):
@@ -48,7 +48,7 @@ def getIndexes(line):
 
 
 title_writen = False
-#rootDir='/home/orestis/nProbe/dump'
+#rootDir='./nProbe/dump'
 rootDir=str(sys.argv[1])
 for dirName, subdirList, fileList in os.walk(rootDir):
 	for fname in fileList:

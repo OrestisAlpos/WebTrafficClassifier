@@ -11,8 +11,8 @@ from reader import Reader
 import matplotlib.pyplot as plt
 
 
-results_directory = '/home/orestis/net/MLPresults/'
-models_directory = '/home/orestis/net/MLPmodels/'
+results_directory = './MLPresults/'
+models_directory = './MLPmodels/'
 
 
 def get_model(num_hid_layers, cells_per_layer, dropout_rate):
@@ -42,7 +42,7 @@ def fit_and_eval(loss_function, optimizer, dropout_rate, dataset_name):
 	write_results(results_file, 'HiddenLayers|CellsPerLayer|Accuracy')
 	
 	# READ THE INPUT
-	fp_logfile = open('/home/orestis/net/working/logfile', 'a')
+	fp_logfile = open('./working/logfile', 'a')
 	#reader = Reader(fp_logfile, False)
 	#(x_train, y_train), (x_test, y_test) = reader.getDataNormalized()
 

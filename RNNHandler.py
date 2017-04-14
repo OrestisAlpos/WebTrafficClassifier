@@ -38,8 +38,8 @@ def MyMetrics(y_true, y_pred):
 
 class RNNHandler:
 	
-	results_directory = '/home/orestis/net/RNNresults'
-	models_directory = '/home/orestis/net/RNNmodels'
+	results_directory = './RNNresults'
+	models_directory = './RNNmodels'
 
 	def __init__(self, model_name, num_categories, loss, optimizer):
 		# GET THE MODEL
@@ -122,5 +122,5 @@ class RNNHandler:
 		labs = [l.get_label() for l in lns]
 		plt.title(title)
 		lgd = plt.legend(lns, labs, loc='upper center', bbox_to_anchor=(0.5, -0.12), fancybox=True, shadow=True, ncol=2)
-		plt.savefig('/home/orestis/net/RNNresults/' + title + '.png')
+		plt.savefig('./RNNresults/' + title + '.png')
 		plt.clf()

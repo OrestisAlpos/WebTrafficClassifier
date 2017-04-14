@@ -19,8 +19,8 @@ model.add(Dense(5, kernel_initializer='uniform', activation = 'softmax'))
 
 
 model.summary()
-plot_model(model, to_file='/home/orestis/net/RNNmodels/RNN_1C.png', show_shapes=True)
-fp = open('/home/orestis/net/RNNmodels/RNN_1C.json', 'w')
+plot_model(model, to_file='./RNNmodels/RNN_1C.png', show_shapes=True)
+fp = open('./RNNmodels/RNN_1C.json', 'w')
 fp.write(model.to_json())
 fp.close()
 

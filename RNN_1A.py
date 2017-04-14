@@ -19,8 +19,8 @@ model.add(Dense(1, kernel_initializer='uniform', activation = 'sigmoid'))
 
 
 model.summary()
-plot_model(model, to_file='/home/orestis/net/RNNmodels/RNN_1A.png', show_shapes=True)
-fp = open('/home/orestis/net/RNNmodels/RNN_1A.json', 'w')
+plot_model(model, to_file='./RNNmodels/RNN_1A.png', show_shapes=True)
+fp = open('./RNNmodels/RNN_1A.json', 'w')
 fp.write(model.to_json())
 fp.close()
 
