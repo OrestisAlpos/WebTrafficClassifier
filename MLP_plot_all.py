@@ -78,7 +78,7 @@ def fit_and_eval(loss_function, optimizer, dropout_rate, dataset_name):
 	loss_short = loss_function
 	if loss_short == 'categorical_crossentropy' or loss_short == 'binary_crossentropy':
 		loss_short = 'crossentropy'
-	plt.title(dataset_name + ', Model: MLP, Loss: ' + loss_short + ', Opt: ' + optimizer + ', Batch: 128, Dropout: ' + str(dropout_rate))
+	plt.title(dataset_name + ',MLP, Loss: ' + loss_short + ', Opt: ' + optimizer + ', Batch: 128, Dropout: ' + str(dropout_rate))
 	box = myplot.get_position()
 	myplot.set_position([box.x0, box.y0 + box.height * 0.2, box.width, box.height * 0.8])	
 	labs = [l.get_label() for l in lns]
@@ -97,10 +97,10 @@ def write_results(results_file, text):
 
 #fit_and_eval('mse', 'sgd', 0) 					DONE in Z   CORRECT
 #fit_and_eval('mse', 'sgd', 0.2) 				DONE in Z   CORRECT
-#fit_and_eval('mse', 'sgd', 0.4)				DONE in Z	CORRECT
-#fit_and_eval('mse', 'sgd', 0.6, 'Dataset0')		DONE in Z	CORRECT
-fit_and_eval('mse', 'sgd', 0.5, 'Dataset0')
-fit_and_eval('mse', 'sgd', 0.8,'Dataset0')
+#fit_and_eval('mse', 'sgd', 0.4)				DONE in Z CORRECT
+#fit_and_eval('mse', 'sgd', 0.6, 'Dataset0')			DONE in Z CORRECT
+#fit_and_eval('mse', 'sgd', 0.5, 'Dataset0')			DONE in Z CORRECT
+#fit_and_eval('mse', 'sgd', 0.8,'Dataset0')			DONE in Z CORRECT
 
 #fit_and_eval('mae', 'sgd', 0)
 #fit_and_eval('mae', 'sgd', 0.2)
@@ -114,16 +114,17 @@ fit_and_eval('mse', 'sgd', 0.8,'Dataset0')
 #fit_and_eval('categorical_crossentropy', 'sgd', 0.6)
 #fit_and_eval('categorical_crossentropy', 'sgd', 0.8)
 
-#fit_and_eval('categorical_crossentropy', 'rmsprop', 0)
-#fit_and_eval('categorical_crossentropy', 'rmsprop', 0.2)
-#fit_and_eval('categorical_crossentropy', 'rmsprop', 0.4, '') #Done with Dataset5, ERROR. Trying again Dataset0
-fit_and_eval('categorical_crossentropy', 'rmsprop', 0.4, 'Dataset0')
-#fit_and_eval('categorical_crossentropy', 'rmsprop', 0.6)
+#fit_and_eval('categorical_crossentropy', 'rmsprop', 0, 'Dataset0')	#Done CORRECT
+#fit_and_eval('categorical_crossentropy', 'rmsprop', 0.2, 'Dataset0')	#Done CORRECT
+#fit_and_eval('categorical_crossentropy', 'rmsprop', 0.4, '') 		#Done with Dataset5, ERROR. Trying again Dataset0
+#fit_and_eval('categorical_crossentropy', 'rmsprop', 0.4, 'Dataset0')	#Done in Z CORRECT
+#fit_and_eval('categorical_crossentropy', 'rmsprop', 0.6, 'Dataset0')	#Done CORRECT
 #fit_and_eval('categorical_crossentropy', 'rmsprop', 0.8)
 
 #fit_and_eval('categorical_crossentropy', 'adagrad', 0)
 #fit_and_eval('categorical_crossentropy', 'adagrad', 0.2)
-#fit_and_eval('categorical_crossentropy', 'adagrad', 0.4, '')	DONE in Z with ERROR
+#fit_and_eval('categorical_crossentropy', 'adagrad', 0.4, '')		#DONE in Z with ERROR
+#fit_and_eval('categorical_crossentropy', 'adagrad', 0.4, 'Dataset0')	#Trying again on the VM, aaand CORRECT!!
 #fit_and_eval('categorical_crossentropy', 'adagrad', 0.6)
 #fit_and_eval('categorical_crossentropy', 'adagrad', 0.8)
 
