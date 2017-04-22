@@ -113,9 +113,9 @@ def write_results(results_file, text):
 #fit_and_eval('categorical_crossentropy', 'adagrad', 0.6,'Dataset0')	#DONE Z CORRECT
 
 #fit_and_eval('categorical_crossentropy', 'sgd', 0, 'Dataset0') 	#DONE Z CORRECT
-fit_and_eval('categorical_crossentropy', 'sgd', 0.2, 'Dataset0')	#DONE Z CORRECT
-fit_and_eval('categorical_crossentropy', 'sgd', 0.4, 'Dataset0')
-fit_and_eval('categorical_crossentropy', 'sgd', 0.6, 'Dataset0')
+#fit_and_eval('categorical_crossentropy', 'sgd', 0.2, 'Dataset0')	#DONE Z CORRECT
+#fit_and_eval('categorical_crossentropy', 'sgd', 0.4, 'Dataset0')	#DONE Z CORRECT
+#fit_and_eval('categorical_crossentropy', 'sgd', 0.6, 'Dataset0')	#DONE Z CORRECT
 
 #fit_and_eval('categorical_crossentropy', 'rmsprop', 0, 'Dataset0')	#Done Z CORRECT
 #fit_and_eval('categorical_crossentropy', 'rmsprop', 0.2, 'Dataset0')	#Done Z CORRECT
