@@ -133,7 +133,7 @@ def write_results(results_file, text):
 
 
 # Dataset 1 ping attack
-#fit_and_eval('mse', 'sgd', 0.2, 'Dataset1')
-#fit_and_eval('mse', 'sgd', 0.4, 'Dataset1')
-fit_and_eval('binary-crossentropy', 'rmsprop', 0.2, 'Dataset1')
-fit_and_eval('binary-crossentropy', 'rmsprop', 0.4, 'Dataset1')
+#fit_and_eval('mse', 'sgd', 0.2, 'Dataset1')				#Done in Z
+#fit_and_eval('mse', 'sgd', 0.4, 'Dataset1')				#Done in Z
+fit_and_eval('binary_crossentropy', 'rmsprop', 0.2, 'Dataset1')		#Done in Z
+fit_and_eval('binary_crossentropy', 'rmsprop', 0.4, 'Dataset1')		#Done in Z
