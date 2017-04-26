@@ -21,65 +21,67 @@ import RNNHandler
 #(3, 'Dataset3', 2, 'RNN_1A') !! grafiki
 #(4, 'Dataset4', 2, 'RNN_1A') !!! mixed type binary and continous
 #(5, 'Dataset5', 3, 'RNN_1B') +categorical
-dataset_id = 5
-dataset_name = 'Dataset5'
-num_classes = 3
-RNN_name = 'RNN_1B'
+#(6, 'Dataset0', 5, 'RNN_1C') +categorical
+dataset_id = 4
+dataset_name = 'Dataset4'
+num_classes = 2
+#RNN_name = 'RNN_1A'
 
-num_epochs = 10
+num_epochs = 20
 
 (x_train, y_train), (x_test, y_test) = Reader.getDataset(dataset_id)
-x_train = x_train[0:1000,:]
-y_train = y_train[0:1000]
-x_test = x_test[0:1000,:]
-y_test = y_test[0:1000]
+#x_train = x_train[0:1000,:]
+#y_train = y_train[0:1000]
+#x_test = x_test[0:1000,:]
+#y_test = y_test[0:1000]
 
-results = {}
-for loss in ['mae', 'mse', 'categorical_crossentropy']:	#categorical_crossentropy
-	for optimizer in ['sgd','adagrad', 'rmsprop']:
+for RNN_name in ['RNN_1A', 'RNN_2A', 'RNN_3A']:
+	results = {}
+	for loss,optimizer in [('mse','sgd')]:#, ('binary_crossentropy','rmsprop')]:	#categorical_crossentropy
+	#for optimizer in ['sgd', 'rmsprop']:
 		RNNmodel = RNNHandler.RNNHandler(RNN_name, num_classes, loss, optimizer)
 		(res_loss, res_accuracy, res_precision, res_recall, res_fscore) = RNNmodel.fit_and_eval(x_train, y_train, x_test, y_test, num_epochs, dataset_name)
 		if num_classes == 2:		
 			results[loss + '|' + optimizer] = res_fscore
 		else:
 			results[loss + '|' + optimizer] = res_accuracy
-
-title = 'Dataset ' + dataset_name + ', ' + 'Model ' + RNN_name
-metric = 'accuracy'
-if num_classes == 2:
-	metric = 'fscore'
-RNNHandler.RNNHandler.plot_results(title, metric, results)
+	
+	title = dataset_name + '.' + RNN_name
+	metric = 'accuracy'
+	if num_classes == 2:
+		metric = 'fscore'
+	RNNHandler.RNNHandler.plot_results(title, metric, results)
 
 
 
 #(6, 'Dataset0', 5, 'RNN_1C') +categorical
-dataset_id = 6
-dataset_name = 'Dataset0'
-num_classes = 5
-RNN_name = 'RNN_1C'
-
-num_epochs = 10
-
-fp_logfile = open('./debug/logfile', "a")
-reader = Reader(fp_logfile, False)
-(x_train, y_train), (x_test, y_test) = reader.getDataNormalized()
-x_train = x_train[0:1000,:]
-y_train = y_train[0:1000]
-x_test = x_test[0:1000,:]
-y_test = y_test[0:1000]
-results = {}
-for loss in ['mae', 'mse', 'categorical_crossentropy']: 
-	for optimizer in ['sgd','adagrad', 'rmsprop']:
-		RNNmodel = RNNHandler.RNNHandler(RNN_name, num_classes, loss, optimizer)
-		(res_loss, res_accuracy, res_precision, res_recall, res_fscore) = RNNmodel.fit_and_eval(x_train, y_train, x_test, y_test, num_epochs, dataset_name)			
-		if num_classes == 2:		
-			results[loss + '|' + optimizer] = res_fscore
-		else:
-			results[loss + '|' + optimizer] = res_accuracy
-
-title = RNN_name + '.' + dataset_name
-metric = 'accuracy'
-if num_classes == 2:
-	metric = 'fscore'
-RNNHandler.RNNHandler.plot_results(title, metric, results)
-
+#dataset_id = 6
+#dataset_name = 'Dataset0'
+#num_classes = 5
+#RNN_name = 'RNN_1C'
+#
+#num_epochs = 10
+##
+#fp_logfile = open('./debug/logfile', "a")
+#reader = Reader(fp_logfile, False)
+#(x_train, y_train), (x_test, y_test) = reader.getDataNormalized()
+#x_train = x_train[0:1000,:]
+#y_train = y_train[0:1000]
+#x_test = x_test[0:1000,:]
+#y_test = y_test[0:1000]
+#results = {}
+#for loss in ['mse', 'categorical_crossentropy']: 
+	#for optimizer in ['sgd','adagrad', 'rmsprop']:
+#		RNNmodel = RNNHandler.RNNHandler(RNN_name, num_classes, loss, optimizer)
+#		#(res_loss, res_accuracy, res_precision, res_recall, res_fscore) = RNNmodel.fit_and_eval(x_train, y_train, x_test, y_test, num_epochs, #dataset_name)			
+		#if num_classes == 2:		
+#			results[loss + '|' + optimizer] = res_fscore
+		#else:
+#			results[loss + '|' + optimizer] = res_accuracy
+#
+#title = dataset_name + '.' + RNN_name
+#metric = 'accuracy'
+#if num_classes == 2:
+	#metric = 'fscore'
+#RNNHandler.RNNHandler.plot_results(title, metric, results)
+#

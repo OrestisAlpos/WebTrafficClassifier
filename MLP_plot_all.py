@@ -44,7 +44,7 @@ def fit_and_eval(loss_function, optimizer, dropout_rate, dataset_name):
 	# READ THE INPUT
 	#fp_logfile = open('./working/logfile', 'a')
 	#reader = Reader(fp_logfile, False)
-	(x_train, y_train), (x_test, y_test) = Reader.getDataset(2)
+	(x_train, y_train), (x_test, y_test) = Reader.getDataset(4)
 
 	#(x_train, y_train), (x_test, y_test) = Reader.getDataset(5)
 	#x_train = x_train[0:1000,:]
@@ -133,13 +133,27 @@ def write_results(results_file, text):
 
 
 # Dataset 1 ping attack
-#fit_and_eval('mse', 'sgd', 0.2, 'Dataset1')				#Done in Z
-#fit_and_eval('mse', 'sgd', 0.4, 'Dataset1')				#Done in Z
-#fit_and_eval('binary_crossentropy', 'rmsprop', 0.2, 'Dataset1')	#Done in Z
-#fit_and_eval('binary_crossentropy', 'rmsprop', 0.4, 'Dataset1')	#Done in Z
+#fit_and_eval('mse', 'sgd', 0.2, 'Dataset1')				#Done in Z COR
+#fit_and_eval('mse', 'sgd', 0.4, 'Dataset1')				#Done in Z COR
+#fit_and_eval('binary_crossentropy', 'rmsprop', 0.2, 'Dataset1')	#Done in Z COR
+#fit_and_eval('binary_crossentropy', 'rmsprop', 0.4, 'Dataset1')	#Done in Z COR
 
 # Dataset 2
-fit_and_eval('mse', 'sgd', 0.2, 'Dataset2')				
-fit_and_eval('mse', 'sgd', 0.4, 'Dataset2')				
-fit_and_eval('binary_crossentropy', 'rmsprop', 0.2, 'Dataset2')	
-fit_and_eval('binary_crossentropy', 'rmsprop', 0.4, 'Dataset2')	
+#fit_and_eval('mse', 'sgd', 0.2, 'Dataset2')				#DONE COR
+#fit_and_eval('mse', 'sgd', 0.4, 'Dataset2')				#DONE COR
+#fit_and_eval('binary_crossentropy', 'rmsprop', 0.2, 'Dataset2')		#DONR COR
+#fit_and_eval('binary_crossentropy', 'rmsprop', 0.4, 'Dataset2')		#DONE COR
+
+# Dataset 3
+#fit_and_eval('mse', 'sgd', 0.2, 'Dataset3')				#DONE, LOW ACC
+#fit_and_eval('mse', 'sgd', 0.4, 'Dataset3')				#DONE, LOW ACC
+#fit_and_eval('binary_crossentropy', 'rmsprop', 0.2, 'Dataset3')		#DONE, LOW ACC
+#fit_and_eval('binary_crossentropy', 'rmsprop', 0.4, 'Dataset3')		#DONE, LOW ACC
+
+
+# Dataset 4
+#fit_and_eval('mse', 'sgd', 0.4, 'Dataset4')				#DONE COR
+#fit_and_eval('binary_crossentropy', 'rmsprop', 0.4, 'Dataset4')	#DONE COR
+#fit_and_eval('mse', 'sgd', 0.2, 'Dataset4')				#DONE COR
+#fit_and_eval('binary_crossentropy', 'rmsprop', 0.2, 'Dataset4')	#DONE COR
+

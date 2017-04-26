@@ -15,16 +15,19 @@ import matplotlib.pyplot as plt
 from sklearn import metrics
 
 def MyMetrics(y_true, y_pred):
-	y_pred[y_pred<0.5] = 0
-	y_pred[y_pred>=0.5] = 1
-	if np.count_nonzero(y_pred == 1) == y_pred.shape[0]:
-		y_pred[0]=0
-	if np.count_nonzero(y_pred == 0) == y_pred.shape[0]:
-		y_pred[0]= 1
-	if np.count_nonzero(y_true == 1) == y_true.shape[0]:
-		y_true[0]=0
-	if np.count_nonzero(y_true == 0) == y_true.shape[0]:
-		y_true[0]= 1
+	y_pred[y_pred<0.5] = 0.0
+	y_pred[y_pred>=0.5] = 1.0
+	y_true[y_true<0.5] = 0.0
+	y_true[y_true>=0.5] = 1.0
+
+	if np.count_nonzero(y_pred == 1.0) == y_pred.shape[0]:
+		y_pred[0]=0.0
+	if np.count_nonzero(y_pred == 0.0) == y_pred.shape[0]:
+		y_pred[0]= 1.0
+	if np.count_nonzero(y_true == 1.0) == y_true.shape[0]:
+		y_true[0]=0.0
+	if np.count_nonzero(y_true == 0.0) == y_true.shape[0]:
+		y_true[0]= 1.0
 	confusion = metrics.confusion_matrix(y_true, y_pred)
 	TP = confusion[1, 1]
 	TN = confusion[0, 0]
@@ -56,8 +59,8 @@ class RNNHandler:
 		
 		
 	def fit_and_eval(self, x_train, y_train, x_test, y_test, nb_epoch, dataset_name):	#batch_size is always 1 and shuffle is always False, so we don't pass them as parameters
-		self.results_file = os.path.join(self.results_directory, self.model_name + '.' + dataset_name)
-		self.write_result('Model:' + self.model_name + ' Dataset:' + dataset_name + ' Loss:' + self.loss + ' Optimizer:' + self.optimizer + ' Dropout:No')
+		self.results_file = os.path.join(self.results_directory, dataset_name + '.' + self.model_name)
+		self.write_result(self.model_name + ' ' + dataset_name + ' Loss:' + self.loss + ' Optimizer:' + self.optimizer + ' Dropout:No')
 		self.write_result('Epoch|Loss|Accuracy|Precision|Recall|Fscore')		
 		res_loss = []
 		res_accuracy = []
@@ -118,9 +121,9 @@ class RNNHandler:
 			line = myplot.plot(x_Axis, result, label = 'loss:' + loss + ' opt:' + optimizer)		
 			lns = lns + line
 		box = myplot.get_position()
-		myplot.set_position([box.x0, box.y0 + box.height * 0.30, box.width, box.height * 0.70])
+		myplot.set_position([box.x0, box.y0 + box.height * 0.25, box.width, box.height * 0.75])
 		labs = [l.get_label() for l in lns]
 		plt.title(title)
-		lgd = plt.legend(lns, labs, loc='upper center', bbox_to_anchor=(0.5, -0.12), fancybox=True, shadow=True, ncol=2)
+		lgd = plt.legend(lns, labs, loc='upper center', bbox_to_anchor=(0.5, -0.15), fancybox=True, shadow=True, ncol=2)
 		plt.savefig('./RNNresults/' + title + '.png')
 		plt.clf()
