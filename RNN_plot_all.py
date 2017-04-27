@@ -22,8 +22,8 @@ import RNNHandler
 #(4, 'Dataset4', 2, 'RNN_1A') !!! mixed type binary and continous
 #(5, 'Dataset5', 3, 'RNN_1B') +categorical
 #(6, 'Dataset0', 5, 'RNN_1C') +categorical
-dataset_id = 4
-dataset_name = 'Dataset4'
+dataset_id = 3
+dataset_name = 'Dataset3'
 num_classes = 2
 #RNN_name = 'RNN_1A'
 
@@ -35,9 +35,9 @@ num_epochs = 10
 #x_test = x_test[0:1000,:]
 #y_test = y_test[0:1000]
 
-for RNN_name in ['RNN_3A']:
+for RNN_name in ['RNN_1.2A', 'RNN_2.2A', 'RNN_3.2A']:
 	results = {}
-	for loss,optimizer in [('mse','sgd')]:#, ('binary_crossentropy','rmsprop')]:	#categorical_crossentropy
+	for loss,optimizer in [('binary_crossentropy','rmsprop')]:#, ('binary_crossentropy','rmsprop')]:	#categorical_crossentropy
 	#for optimizer in ['sgd', 'rmsprop']:
 		RNNmodel = RNNHandler.RNNHandler(RNN_name, num_classes, loss, optimizer)
 		(res_loss, res_accuracy, res_precision, res_recall, res_fscore) = RNNmodel.fit_and_eval(x_train, y_train, x_test, y_test, num_epochs, dataset_name)
