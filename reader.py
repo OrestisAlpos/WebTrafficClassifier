@@ -143,7 +143,7 @@ class Reader:
 			fp_att.readline() #read away the first line (title)
 			#Train Dataset: 10 legitimate and 10 attack samples, loop 30,000 times. 
 			#TOT 300,000 leg, 300,000 att.
-			for i in range(10000):	############ CORRECTION: TOTAL 100,000 legitimate, 100,000 attack
+			for i in range(1000):	############ CORRECTION: TOTAL 10,000 legitimate, 10,000 attack
 				for j in range(10):
 					Reader.write_it(x_train, y_train, fp_leg, 0)
 				for j in range(10):

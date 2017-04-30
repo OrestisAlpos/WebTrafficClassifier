@@ -89,6 +89,7 @@ class RNNHandler:
 				res_fscore.append(fscore)
 			self.write_result(str(i) +'|'+ str(loss) +'|'+ str(accuracy) +'|'+ str(precision) +'|'+ str(recall) +'|'+ str(fscore))
 
+		self.model.save(self.models_directory + '/full_models/' + dataset_name + '.' + self.model_name + '.h5')
 		return (res_loss, res_accuracy, res_precision, res_recall, res_fscore)
 	
 
