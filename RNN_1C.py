@@ -14,7 +14,7 @@ model = Sequential()
 #EXPECTS INPUT AS (nb_sample, timesteps, nb_features), where nb_sample=1 (batch_size = 1), timesteps = 1 and nb_features = length
 
 #model.add(Dense(40, input_dim = 12, init='uniform', activation='relu'))
-model.add(SimpleRNN(units=50, input_shape=(1,length), batch_input_shape=(1,1,length), kernel_initializer='uniform', recurrent_initializer='uniform', activation='relu', stateful=True))
+model.add(SimpleRNN(units=50, input_shape=(1,length), batch_input_shape=(1,1,length), kernel_initializer='random_uniform', recurrent_initializer='random_uniform', activation='relu', stateful=True))
 model.add(Dense(5, kernel_initializer='uniform', activation = 'softmax'))
 
 

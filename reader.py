@@ -129,8 +129,43 @@ class Reader:
 		UDPATTFile = './nProbe/dumpedited/editedUDPATT'
 		PortScanFile = './nProbe/dumpedited/editedPORTSC'
 		
+		if DataSetType == 0:
+			fp_leg = open(LegitFile, 'r')
+			fp_leg.readline() #read away the first line (title)
+			fp_attPING = open(PingAttFile, 'r')
+			fp_attPING.readline() #read away the first line (title)
+			fp_attSYN = open(SYNATTFile, 'r')
+			fp_attSYN.readline()
+			fp_attUDP = open(UDPATTFile, 'r')
+			fp_attUDP.readline()
+			fp_attPORTSC = open(PortScanFile, 'r')
+			fp_attPORTSC.readline()
+			#Train Dataset: 10 legitimate and 10 attack samples, loop 3,000 times. 
+			for i in range(3000):
+				for j in range(random.choice([10,20,50,100])):
+					Reader.write_it(x_train, y_train, fp_leg, 0)
+				for j in range(random.choice([2,5,10,20])):
+					Reader.write_it(x_train, y_train, fp_attPING, 1)
+				for j in range(random.choice([2,5,10,20])):
+					Reader.write_it(x_train, y_train, fp_attSYN, 2)
+				for j in range(random.choice([2,5,10,20])):
+					Reader.write_it(x_train, y_train, fp_attUDP, 3)
+				for j in range(random.choice([2,5,10,20])):
+					Reader.write_it(x_train, y_train, fp_attPORTSC, 4)
+			#Test Dataset: 10 legitimate and 10 attack samples, loop 900 times.
+			for i in range(900):
+				for j in range(random.choice([10,20,50,100])):
+					Reader.write_it(x_test, y_test, fp_leg, 0)
+				for j in range(random.choice([2,5,10,20])):
+					Reader.write_it(x_test, y_test, fp_attPING, 1)
+				for j in range(random.choice([2,5,10,20])):
+					Reader.write_it(x_test, y_test, fp_attSYN, 2)
+				for j in range(random.choice([2,5,10,20])):
+					Reader.write_it(x_test, y_test, fp_attUDP, 3)
+				for j in range(random.choice([2,5,10,20])):
+					Reader.write_it(x_test, y_test, fp_attPORTSC, 4)
 
-		if DataSetType == 1 or DataSetType == 2 or DataSetType == 3:
+		elif DataSetType == 1 or DataSetType == 2 or DataSetType == 3:
 			fp_leg = open(LegitFile, 'r')
 			fp_leg.readline() #read away the first line (title)
 			fp_att = open(SYNATTFile, 'r')
