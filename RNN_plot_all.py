@@ -1,4 +1,5 @@
 import keras.utils
+from keras import optimizers
 from keras.models import Sequential, model_from_json, load_model
 from keras.layers import Dense, Activation, SimpleRNN
 from keras.utils.vis_utils import plot_model
@@ -27,7 +28,7 @@ dataset_name = 'Dataset0'
 num_classes = 5
 #RNN_name = 'RNN_1A'
 
-num_epochs = 20
+num_epochs = 10
 
 (x_train, y_train), (x_test, y_test) = Reader.getDataset(dataset_id)
 #x_train = x_train[0:1000,:]
@@ -37,14 +38,18 @@ num_epochs = 20
 
 for RNN_name in ['RNN_2C']:
 	results = {}
-	for loss,optimizer in [('mse','sgd')]:#, ('categorical_crossentropy','rmsprop')]:	#categorical_crossentropy
+	#for loss,optimizer in [('mse','sgd')]:#, ('categorical_crossentropy','rmsprop')]:	#categorical_crossentropy
 	#for optimizer in ['sgd', 'rmsprop']:
-		RNNmodel = RNNHandler.RNNHandler(RNN_name, num_classes, loss, optimizer)
-		(res_loss, res_accuracy, res_precision, res_recall, res_fscore) = RNNmodel.fit_and_eval(x_train, y_train, x_test, y_test, num_epochs, dataset_name)
-		if num_classes == 2:		
-			results[loss + '|' + optimizer] = res_fscore
-		else:
-			results[loss + '|' + optimizer] = res_accuracy
+	loss = 'mse'
+	optimizer = 'sgd'
+	#optimizer_w_params = optimizers.RMSprop(lr=0.00007)
+	optimizer_w_params = 'sgd'
+	RNNmodel = RNNHandler.RNNHandler(RNN_name, num_classes, loss, optimizer_w_params, optimizer)
+	(res_loss, res_accuracy, res_precision, res_recall, res_fscore) = RNNmodel.fit_and_eval(x_train, y_train, x_test, y_test, num_epochs, dataset_name)
+	if num_classes == 2:		
+		results[loss + '|' + optimizer] = res_fscore
+	else:
+		results[loss + '|' + optimizer] = res_accuracy
 	
 	title = dataset_name + '.' + RNN_name
 	metric = 'accuracy'

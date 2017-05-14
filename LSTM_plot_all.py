@@ -22,9 +22,9 @@ import LSTMHandler
 #(4, 'Dataset4', 2, 'RNN_1A')
 #(5, 'Dataset5', 3, 'RNN_1B') 
 #(6, 'Dataset0', 5, 'RNN_1C')
-dataset_id = 3
-dataset_name = 'Dataset3'
-num_classes = 2
+dataset_id = 0
+dataset_name = 'Dataset0'
+num_classes = 5
 #RNN_name = 'RNN_1A'
 
 num_epochs = 10
@@ -35,9 +35,9 @@ num_epochs = 10
 #x_test = x_test[0:1000,:]
 #y_test = y_test[0:1000]
 
-for LSTM_name in ['LSTM_1.2A','LSTM_2.2A', 'LSTM_3.2A']:
+for LSTM_name in ['LSTM_2C']:
 	results = {}
-	for loss,optimizer in [('binary_crossentropy','rmsprop')]:	#categorical_crossentropy
+	for loss,optimizer in [('mse','sgd')]:	#categorical_crossentropy
 	#for optimizer in ['sgd', 'rmsprop']:
 		LSTMmodel = LSTMHandler.LSTMHandler(LSTM_name, num_classes, loss, optimizer)
 		(res_loss, res_accuracy, res_precision, res_recall, res_fscore) = LSTMmodel.fit_and_eval(x_train, y_train, x_test, y_test, num_epochs, dataset_name)

@@ -42,7 +42,7 @@ def MyMetrics(y_true, y_pred):
 class LSTMHandler:
 	
 	results_directory = './LSTMresults'
-	models_directory = './LSTMmodels'
+	models_directory = './LSTMmodels/'
 
 	def __init__(self, model_name, num_categories, loss, optimizer):
 		# GET THE MODEL
@@ -88,7 +88,8 @@ class LSTMHandler:
 				res_recall.append(recall)
 				res_fscore.append(fscore)
 			self.write_result(str(i) +'|'+ str(loss) +'|'+ str(accuracy) +'|'+ str(precision) +'|'+ str(recall) +'|'+ str(fscore))
-
+			self.model.save(self.models_directory + 'full_models/' + dataset_name + '.' + self.model_name + '.epoch' + str(i) + '.h5')
+		self.model.save(self.models_directory + 'full_models/' + dataset_name + '.' + self.model_name + '.h5')
 		return (res_loss, res_accuracy, res_precision, res_recall, res_fscore)
 	
 

@@ -44,7 +44,7 @@ class RNNHandler:
 	results_directory = './RNNresults'
 	models_directory = './RNNmodels'
 
-	def __init__(self, model_name, num_categories, loss, optimizer):
+	def __init__(self, model_name, num_categories, loss, optimizer, optimizer_name):
 		# GET THE MODEL
 		fp_model = open(os.path.join(self.models_directory, model_name + '.json'), 'r')
 		model_str = fp_model.read()
@@ -56,11 +56,12 @@ class RNNHandler:
 		self.num_categories = num_categories
 		self.loss = loss
 		self.optimizer = optimizer
+		self.optimizer_name = optimizer_name
 		
 		
 	def fit_and_eval(self, x_train, y_train, x_test, y_test, nb_epoch, dataset_name):	#batch_size is always 1 and shuffle is always False, so we don't pass them as parameters
 		self.results_file = os.path.join(self.results_directory, dataset_name + '.' + self.model_name)
-		self.write_result(self.model_name + ' ' + dataset_name + ' Loss:' + self.loss + ' Optimizer:' + self.optimizer + ' Dropout:No')
+		self.write_result(self.model_name + ' ' + dataset_name + ' Loss:' + self.loss + ' Optimizer:' + self.optimizer_name + ' Dropout:No')
 		self.write_result('Epoch|Loss|Accuracy|Precision|Recall|Fscore')		
 		res_loss = []
 		res_accuracy = []
