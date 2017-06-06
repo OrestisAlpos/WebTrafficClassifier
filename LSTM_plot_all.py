@@ -27,7 +27,7 @@ dataset_name = 'Dataset0'
 num_classes = 5
 #RNN_name = 'RNN_1A'
 
-num_epochs = 10
+num_epochs = 15
 
 (x_train, y_train), (x_test, y_test) = Reader.getDataset(dataset_id)
 #x_train = x_train[0:1000,:]
@@ -35,7 +35,7 @@ num_epochs = 10
 #x_test = x_test[0:1000,:]
 #y_test = y_test[0:1000]
 
-for LSTM_name in ['LSTM_2C']:
+for LSTM_name in ['LSTM_1C']:
 	results = {}
 	for loss,optimizer in [('mse','sgd')]:	#categorical_crossentropy
 	#for optimizer in ['sgd', 'rmsprop']:
