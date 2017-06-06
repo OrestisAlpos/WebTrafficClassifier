@@ -268,7 +268,13 @@ class Reader:
 				for j in range(random.choice([1,5,10,20])):
 					Reader.write_it(x_test, y_test, fp_att, 1)		
 
-
+		elif DataSetType == 100: #Final Test με input από το newcapture1, μόνο Legitimate κίνηση, μόνο test αρχεία
+			fp_leg = open('./final_test/dumpedited/editedLEGIT', 'r')
+			fp_leg.readline() #read away the first line (title)
+			#Test Dataset:
+			for i in range(62000):	
+				Reader.write_it(x_test, y_test, fp_leg, 0)
+			Reader.write_it(x_train, y_train, fp_leg, 0)	
 
 		x_train = np.array(x_train)
 		y_train = np.array(y_train)
